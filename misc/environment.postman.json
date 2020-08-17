@@ -1,0 +1,19 @@
+{
+	"id": "32286469-e58a-4456-8bbc-f5396eef35bd",
+	"name": "Laravel Package",
+	"values": [
+		{
+			"key": "hostname",
+			"value": "http://localhost:8001",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2020-08-17T00:47:30.376Z",
+	"_postman_exported_using": "Postman/7.30.1"
+}

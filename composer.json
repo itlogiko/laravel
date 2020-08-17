@@ -1,0 +1,28 @@
+{
+  "authors": [
+    {
+      "email": "juliusiqbal@gmail.com",
+      "name": "Julius Iqbal"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "itLogiko\\Laravel\\": "src/"
+    }
+  },
+  "description": "itLogiko Laravel",
+  "extra": {
+    "laravel": {
+      "aliases": {},
+      "providers": [
+        "itLogiko\\Laravel\\Providers\\AppServiceProvider"
+      ]
+    }
+  },
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "name": "itlogiko/laravel",
+  "require": {},
+  "require-dev": {},
+  "type": "library"
+}

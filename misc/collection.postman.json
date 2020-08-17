@@ -1,0 +1,1093 @@
+{
+	"info": {
+		"_postman_id": "f1403f3a-269d-4b8d-98fb-e69864a32b56",
+		"name": "Laravel Package",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API",
+			"item": [
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Admins",
+							"item": [
+								{
+									"name": "Destroy",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/admins/3",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"admins",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Index",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/admins",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"admins"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Julius Iqbal\",\n    \"password\": \"12345678\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/admins/1",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"admins",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Show",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/admins/1",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"admins",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"juliusiqbal2@gmail.com\",\n    \"name\": \"Julius Iqbal\",\n    \"password\": \"12345678\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/admins",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"admins"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Contacts",
+							"item": [
+								{
+									"name": "Index",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/contacts",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"contacts"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Show",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/contacts/1",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"contacts",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Translations",
+							"item": [
+								{
+									"name": "Destroy",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/translations/4",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"translations",
+												"4"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Index",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/translations",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"translations"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"key\": \"Welcome!\",\n    \"locale\": \"en\",\n    \"value\": \"Welcome!\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/translations/1",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"translations",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Show",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/translations/1",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"translations",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"key\": \"Welcome!\",\n    \"locale\": \"en\",\n    \"value\": \"Welcome!\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/translations",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"translations"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Users",
+							"item": [
+								{
+									"name": "Destroy",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/users/3",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"users",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Index",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/users",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"users"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Julius Iqbal\",\n    \"password\": \"12345678\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/users/1",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"users",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Show",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/users/1",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"users",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"juliusiqbal2@gmail.com\",\n    \"name\": \"Julius Iqbal\",\n    \"password\": \"12345678\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{hostname}}/itlogiko/admin/api/users",
+											"host": [
+												"{{hostname}}"
+											],
+											"path": [
+												"itlogiko",
+												"admin",
+												"api",
+												"users"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Forgot Password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"julius.jsr@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostname}}/itlogiko/admin/api/forgot-password",
+									"host": [
+										"{{hostname}}"
+									],
+									"path": [
+										"itlogiko",
+										"admin",
+										"api",
+										"forgot-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"julius.jsr@gmail.com\",\n    \"password\": \"12345678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostname}}/itlogiko/admin/api/login",
+									"host": [
+										"{{hostname}}"
+									],
+									"path": [
+										"itlogiko",
+										"admin",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hostname}}/itlogiko/admin/api/logout",
+									"host": [
+										"{{hostname}}"
+									],
+									"path": [
+										"itlogiko",
+										"admin",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"juliusiqbal@gmail.com\",\n    \"name\": \"Julius Iqbal\",\n    \"password\": \"12345678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostname}}/itlogiko/admin/api/register",
+									"host": [
+										"{{hostname}}"
+									],
+									"path": [
+										"itlogiko",
+										"admin",
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reset Password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"julius.jsr@gmail.com\",\n    \"password\": \"12345678\",\n    \"token\": \"b14df871b18a03522cec9cb6701fba2494132d7efc7440c642dacfa37daef9c9\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostname}}/itlogiko/admin/api/reset-password",
+									"host": [
+										"{{hostname}}"
+									],
+									"path": [
+										"itlogiko",
+										"admin",
+										"api",
+										"reset-password"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Locales",
+					"item": [
+						{
+							"name": "List",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"locale\": \"en\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostname}}/itlogiko/api/locales/list",
+									"host": [
+										"{{hostname}}"
+									],
+									"path": [
+										"itlogiko",
+										"api",
+										"locales",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Switch",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"locale\": \"en\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostname}}/itlogiko/api/locales/switch",
+									"host": [
+										"{{hostname}}"
+									],
+									"path": [
+										"itlogiko",
+										"api",
+										"locales",
+										"switch"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Contact",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"julius.jsr@gmail.com\",\n    \"message\": \"Julius Iqbal <julius.jsr@gmail.com>\",\n    \"name\": \"Julius Iqbal\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostname}}/itlogiko/api/contact",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"itlogiko",
+								"api",
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"julius.jsr@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostname}}/itlogiko/api/forgot-password",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"itlogiko",
+								"api",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"julius.jsr@gmail.com\",\n    \"password\": \"12345678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostname}}/itlogiko/api/login",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"itlogiko",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostname}}/itlogiko/api/logout",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"itlogiko",
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"julius.jsr@gmail.com\",\n    \"name\": \"Julius Iqbal\",\n    \"password\": \"12345678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostname}}/itlogiko/api/register",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"itlogiko",
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"julius.jsr@gmail.com\",\n    \"password\": \"12345678\",\n    \"token\": \"65e2cbfe2aa45e40789406f5b728de00e9580522ab568d927a97c09013125f4a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostname}}/itlogiko/api/reset-password",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"itlogiko",
+								"api",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
